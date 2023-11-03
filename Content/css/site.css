@@ -1,0 +1,121 @@
+* {
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+}
+html, body {
+    margin: 0px;
+    min-height: 100%;
+    
+    font-family: helvetica,verdana,arial,sans-serif;
+    font-size: 16px
+}
+html {
+    background: linear-gradient(#238fc5, #c5fbff);
+}
+
+
+p {
+    max-width: 800px;
+}
+
+
+#games img {
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+.game {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+}
+
+.gameDescription {
+    width: 300px;
+}
+
+#mainContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: flex-start;
+    padding: 25px;
+    margin: 0px auto;
+}
+#header {
+    background-color: #00547d7d;
+    text-align: center;
+    z-index: 2;
+    font-weight: bold;
+    font-size: 36px;
+    color: #c2cfd6;
+    min-height: 180px;
+    margin-bottom: 100px;
+}
+.title {
+    font-weight: bold;
+}
+.gearFooter {
+    position: fixed;
+    bottom:-64px;
+    left: -64px;
+    white-space: nowrap
+}
+
+@keyframes clockwise {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(60deg);}
+}
+@keyframes counter-clockwise {
+    0% {transform: rotate(30deg);}
+    100% {transform: rotate(-30deg);}
+}
+
+.gear {
+    opacity: 0.2;
+    display: inline-block;
+    margin: -8px;
+    width: 128px;
+    height: 128px;
+    background-image: url("../Images/gear1.png");
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.29,-0.23, 0.71, 1.26);
+}
+
+.clockwise {
+    animation-name: clockwise;
+}
+.counter-clockwise {
+    animation-name: counter-clockwise;
+}
+
+#logoContainer {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center
+}
+
+#logo {    
+    margin: 30px 30px 3px 30px;
+    width: 452px;
+    height: 244px;
+    background-image: url("../Images/logo.png");
+    image-rendering: pixelated;
+    background-size: 1356px 244px;
+    background-position: left 0px;
+    animation: logoAnimation 0.25s linear 0s infinite forwards;
+    animation-timing-function: steps(3, jump-both);
+}
+
+@keyframes logoAnimation {
+    from {
+        background-position: top right 1808px;
+    }
+
+    to {
+        background-position: top right 0px;
+    }
+}
