@@ -154,8 +154,6 @@ p {
 }
 
 .footer {
-    position: fixed;
-    bottom: 0px;
     white-space: nowrap;
     display: flex;
     width: 100%;
