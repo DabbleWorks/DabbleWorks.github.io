@@ -5,39 +5,57 @@
 	<title>Dabble Works Games</title>
 
 	<link rel="stylesheet" href="/Content/css/site.css?v=1">
+
+    <style>
+        .backdrop {
+            content: ' ';
+            background-image: url(/Content/Images/penPals.png);
+            background-size: cover;
+            background-position-x: center;
+            inset: 0;
+            position: absolute;
+            z-index: -1;
+            filter: blur(10px);
+            opacity: 0.3;
+        }
+    </style>
 </head>
 
 <body>
-	<div id="header">
-		<div id="logoContainer">
-			<div id="logo"></div>
-		</div>
-	</div>
+    <div class="backdrop"></div>
+    <div id="navContainer">
+        <a href="/">
+            <div id="smallLogo"></div>
+        </a>
+    </div>
 	<div id="mainContainer">
 
-		<p>
-			Hi there, and welcome to the Dabble Works! We make games and like to like to talk 
-			a lot about the process of designing games. There are some older free games 
-			<a href="https://dobbsworks.github.io/">here</a>, and we're dipping our toes into
-			commercial games. Check out our library of games below:
-		</p>
+        <br/>
+        <br/>
 
 		<div id="games">
 			<div class="game">
-				<a href="/PaperRobot"><img src="/Content/Images/paperRobotLogo.png" /></a>
-				<div class="gameDescription">
-					<h4>Paper Robot (working title)</h4>
-					<div>Follow the adventures of the recently reactivated robot D4-BB13 (or Dabble for short) as he travels near and far in his quest for the golden gears needed to repair the legendary Dream Machine. Meet a huge cast of colorful characters, and team up with new partners to explore the lands. Collect modules and items to power up Dabble in this classic turn-based, low-number combat system where every point of damage counts! </div>
-				</div>
-			</div>
-			<div class="game">
-				<div class="gameDescription">
-					<h4>Pen Pals</h4>
+				<!-- <img src="/Content/Images/penPals.png" /> -->
+				<div>
+					<h2>Pen Pals</h2>
 					<div>Things are going HAYwire down at the farm! Corral a herd of particularly round barnyard friends back into the pen. When two matching animals bump into each other, you'll find an even larger animal in their place. Things get crowded quickly, so get a mooove on in Pen Pals!</div>
+                    <br/>
+                    <div>
+                        <a href="https://store.steampowered.com/app/2682460/Pen_Pals/">
+                            <img class="steamLink" src="/Content/Images/steam.jpg" />
+                        </a>
+                    </div>
 				</div>
-				<a href="/PenPals"><img src="/Content/Images/penPals.png" /></a>
 			</div>
 		</div>
+
+        <br/>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/EdZt7uvr6wY" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+
 	</div>
 
 
